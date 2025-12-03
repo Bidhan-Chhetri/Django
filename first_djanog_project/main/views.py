@@ -1,7 +1,8 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Hello welcome to my webpage")
+    return render(request, 'greet.html')
 
 def hello(request):
-    return HttpResponse("Hello! How are you? are you ok.")
+    return render(request, 'home.html')
