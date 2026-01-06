@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 def home(request):
     return render(request, 'main/home.html')
@@ -7,7 +8,9 @@ def about(request):
     return render(request, 'main/about.html')
 
 def contact(request):
-    return render(request, 'main/contact.html')
+    emails = ["bidhanchhetri52@gmail.com", "bisheshchhetri51@gmail.com"]
+    context = {"email" : emails, "address" : "Butwal"}
+    return render(request, 'main/contact.html', context) 
 
 def greet(request):
-    return render(request, 'main/greet.html')
+    return HttpResponse("<H1>hello what are you doing Namaste!!!<h1>")
