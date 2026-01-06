@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h1>hello right now you are in the about page of this django project</h1>
-</body>
-</html>
+{% extends 'main/base.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block hero-section %}
+<section class="container-fluid vh-100">
+  <div class="row h-100">
+    <!-- Left Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white p-5" style="background-color:#34495e;">
+      <h1 class="mb-3 fs-1">About Us</h1>
+      <p class="text-center fs-5 mb-3" style="max-width:500px;">
+        We are passionate about empowering learners with modern web development skills. 
+        Our mission is to make coding accessible, practical, and inspiring for everyone.
+      </p>
+      <a href="#" class="btn btn-warning btn-lg">Learn More</a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white p-5" style="background-color:#27ae60;">
+      <h1 class="mb-3 fs-1">Our Vision</h1>
+      <p class="text-center fs-5 mb-3" style="max-width:500px;">
+        We believe education should be hands-on and future-focused. 
+        By combining Django, Python, and Bootstrap, we help students build real-world projects and grow their careers.
+      </p>
+      <a href="#" class="btn btn-warning btn-lg">Join Our Journey</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

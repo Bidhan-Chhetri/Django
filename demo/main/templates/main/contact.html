@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block hero-section %}
+<section class="container-fluid vh-100">
+  <div class="row h-100">
+    <!-- Left Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white p-5" style="background-color:#1abc9c;">
+      <h1 class="mb-3 fs-1">Get in Touch</h1>
+      <p class="text-center fs-5 mb-3" style="max-width:500px;">
+        Have questions about our courses or need support? 
+        We’re here to help you every step of the way.
+      </p>
+      <a href="mailto:info@mysite.com" class="btn btn-warning btn-lg">Email Us</a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white p-5" style="background-color:#2980b9;">
+      <h1 class="mb-3 fs-1">Contact Details</h1>
+      <p class="text-center fs-5 mb-3" style="max-width:500px;">
+        📍 Location: Rupandehi, Nepal <br>
+        📞 Phone: +977-9800000000 <br>
+        ✉️ Email: support@mysite.com
+      </p>
+      <a href="#" class="btn btn-warning btn-lg">Visit Us</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

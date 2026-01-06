@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Hello right now you are in the home page of this website</h1>
-</body>
-</html>
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block hero-section %}
+<section class="container-fluid vh-100">
+  <div class="row h-100">
+    <!-- Left Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white p-5" style="background-color:#2c3e50;">
+      <h1 class="mb-3 fs-1">Learning Django & Python</h1>
+      <p class="text-center fs-5 mb-3" style="max-width:500px;">
+        Building powerful web applications with Django and Python. 
+        A journey of education and growth.
+      </p>
+      <a href="#" class="btn btn-warning btn-lg">Start Learning</a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-white p-5" style="background-color:#16a085;">
+      <h1 class="mb-3 fs-1">Education First</h1>
+      <p class="text-center fs-5 mb-3" style="max-width:500px;">
+        Empowering students with modern web development skills. 
+        Learn, practice, and create projects that matter.
+      </p>
+      <a href="#" class="btn btn-warning btn-lg">Explore Courses</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+
